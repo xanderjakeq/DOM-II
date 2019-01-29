@@ -16,12 +16,12 @@ const welcomeH2AndImg = document.querySelector('.intro').querySelectorAll('h2, i
 // TODO: change discobus IMG
 welcomeH2AndImg[1].addEventListener('click', ()=>{
     welcomeH2AndImg[1].textContent = 'Welcome To Disco Bus!'
-    welcomeH2AndImg[0].src = '/img/fun.jpg'
+    welcomeH2AndImg[0].src = '/img/fun-bus.png'
 })
 
 // 3 onhover Reveal DiscoBus
 welcomeH2AndImg[0].addEventListener('mouseover', (e) => {
-    e.currentTarget.src = '/img/fun.jpg'
+    e.currentTarget.src = '/img/fun-bus.png'
 })
 
 // 3 onMouseOut back to original photo
@@ -43,7 +43,7 @@ window.addEventListener('keydown', (e) => {
 // TODO: add dicoball img
 document.querySelector('body').addEventListener('click', (e) =>{
     let img = document.createElement('img')
-    img.src = '/img/fun-bus.jpg'
+    img.src = '/img/discoball.png'
     img.style.position = 'absolute'
     img.style.width = '100px'
     img.style.height = '100px'
